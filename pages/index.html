@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="icon" href="../content/images/photo_2025-01-31_01-52-59.jpg">
+    <title>Isaev's Cite</title>
+</head>
+<body>
+
+<div id="overlay">
+    <div id="modal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h2>About cite</h2>
+        <!--<button class="modal-button continue" id="continueBtn">Продолжить</button>
+        <button class="modal-button cancel" id="cancelBtn">Отменить</button>-->
+        <p>At the moment I am just learning how to make a website. So it is updated as I go.</p>
+    </div>
+</div>
+
+<nav class="navbar">
+    <ul class="nav-list">
+        <li class="nav-item"><a href="index.html">Main Page</a></li>
+        <li class="nav-item"><a href="contacts.html">Send me a message</a></li>
+        <li class="nav-item"><a href="about.html">Upload vacancy</a></li>
+        <li class="nav-item"><a href="download.html">My Resume</a></li>
+    </ul>
+</nav>
+
+<div class="quote-block">
+    <blockquote>Live as if you were to die tomorrow. Learn as if you were to live forever</blockquote>
+    <div class="quote-author"> - Mahatma Gandhi</div>
+</div>
+
+<div class="content-wrapper">
+    <div class="main-content">
+        <img id="myPhoto" src="../content/images/photo_2025-01-31_01-52-59.jpg" width="150px" alt="Isaev's photo">
+
+
+        <div class="information">
+            <p>There is detailed information about <b>me</b></p>
+            <dl>
+                <dt><b>Last Name:</b></dt>
+                <dd><em>Isaev</em></dd>
+                <dt><b>First Name:</b></dt>
+                <dd><em>Dmitry</em></dd>
+                <dt><b>Birthday:</b></dt>
+                <dd><em>1998-08-08</em></dd>
+            </dl>
+
+            <p><strong>Cite where I learned development:</strong><br></p>
+            <a href="https://www.freecodecamp.org/" target="_blank">https://www.freecodecamp.org/</a>
+
+            <div id="bio">
+                <p>In the youth I liked <cite>football</cite></p>
+                <p>
+                    As Quincy Larson said,
+                    <q cite="https://www.freecodecamp.org/news/learn-to-code-book/">
+                        Momentum is everything.
+                    </q>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-content">
+        <h2>Дополнительная информация обо мне</h2>
+        <p>Дополняется...</p>
+    </div>
+
+</div>
+
+<br>
+
+
+
+<footer class="site-footer">
+    <address>
+        <p><a href="https://vk.com/chilled08" target="_self">My webpage on vk (open on this page)</a></p>
+        <p><a href="mailto:baskil878@gmail.com">My mail</a></p>
+        <p><a href="https://t.me/baskil8">My telegram</a></p>
+    </address>
+</footer>
+
+
+<script src="../scripts/myScript.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        overlayFunction();
+
+        /*const playButton = document.getElementById("playButton");
+        const music = document.getElementById("backgroundMusic");
+
+        playButton.addEventListener("click", function () {
+                music.play();
+                playButton.style.display = 'none';
+            }
+        );*/
+
+        const continueBtn = document.getElementById("continueBtn");
+        const cancelBtn = document.getElementById("cancelBtn");
+        const overlay = document.getElementById("overlay");
+        const music = document.getElementById("backgroundMusic");
+
+        continueBtn.addEventListener("click", () => {
+            music.play();
+            overlay.style.display = 'none';
+        })
+
+        cancelBtn.addEventListener("click", () => {
+            overlay.style.display = 'none';
+        })
+    });
+</script>
+</body>
+
+
+</html>
