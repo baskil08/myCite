@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css"></link>
+    <link rel="stylesheet" href="./styles/common.css"></link>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
@@ -41,10 +42,16 @@
 
 <div class="content-wrapper">
     <div class="main-content">
-        <img id="myPhoto" src="./content/images/photo_2025-01-31_01-52-59.jpg" width="150px" alt="Isaev's photo">
+
+
+
 
 
         <div class="information">
+            <img id="myPhoto" src="./content/images/photo_2025-01-31_01-52-59.jpg" width="150px" alt="Isaev's photo">
+
+
+            <div class="info">
             <p>There is detailed information about <b>me</b></p>
             <dl>
                 <dt><b>Last Name:</b></dt>
@@ -66,6 +73,7 @@
                         Momentum is everything.
                     </q>
                 </p>
+            </div>
             </div>
         </div>
     </div>
@@ -95,28 +103,7 @@
     document.addEventListener("DOMContentLoaded", function (event) {
         overlayFunction();
 
-        /*const playButton = document.getElementById("playButton");
-        const music = document.getElementById("backgroundMusic");
 
-        playButton.addEventListener("click", function () {
-                music.play();
-                playButton.style.display = 'none';
-            }
-        );*/
-
-        const continueBtn = document.getElementById("continueBtn");
-        const cancelBtn = document.getElementById("cancelBtn");
-        const overlay = document.getElementById("overlay");
-        const music = document.getElementById("backgroundMusic");
-
-        continueBtn.addEventListener("click", () => {
-            music.play();
-            overlay.style.display = 'none';
-        })
-
-        cancelBtn.addEventListener("click", () => {
-            overlay.style.display = 'none';
-        })
     });
 </script>
 </body>
