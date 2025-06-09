@@ -236,3 +236,10 @@ hr {
     background-color:black;
     border-radius: 2px;
 }
+
+input {
+    margin: 10px;
+}
+#msg {
+    height: 100px;
+}
