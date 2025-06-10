@@ -10,7 +10,7 @@
     max-width: 600px;
     margin: 100px 19%;
     padding: 20px;
-    border-left: 5px solid #4A90E2;
+    border-left: 5px solid #030a10;
     background-color: #f9f9f9;
     font-style: italic;
     font-size: 1.2em;
@@ -136,16 +136,7 @@ a:hover {
     list-style-type: none;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-    .main-content, .sidebar-content {
-        flex: none;
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
+
 
 hr {
     height: 2px;
